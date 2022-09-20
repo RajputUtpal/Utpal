@@ -1,0 +1,235 @@
+<html>
+
+<head>
+    <title>
+        Utpal Singh
+    </title>
+    <link rel="shortcut icon" href="images.png" style="border-radius: 50%;">
+    <style>
+        a {
+            -webkit-transition: color 1s;
+            transition: color 0.5s;
+            color: black;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: rgb(97, 7, 207);
+            text-decoration: underline rgb(97, 7, 202);
+            text-underline-offset: 0.3em;
+
+        }
+
+        .rotate {
+            animation: rotation 8s infinite alternate;
+        }
+
+        @keyframes rotation {
+            from {
+                transform: rotate(30deg);
+            }
+
+            to {
+                transform: rotate(120deg);
+            }
+        }
+
+        @keyframes eyeanimation {
+            0% {
+                margin-top: 0%;
+            }
+
+            25% {
+                margin-top: 5%;
+            }
+
+            50% {
+                margin-top: 10%;
+            }
+
+            75% {
+                margin-top: 5%;
+            }
+
+            100% {
+                margin-top: 0%;
+            }
+        }
+
+        #eye {
+            animation-name: eyeanimation;
+            animation-duration: 8s;
+            animation-delay: 0;
+            animation-iteration-count: infinite;
+
+        }
+
+        .face {
+            position: absolute;
+            top: 15px;
+            left: 0px;
+            width: 40px;
+            height: 25px;
+            border-radius: 50%;
+            background: #000000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .eyes .eye {
+            position: relative;
+            width: 25px;
+            height: 20px;
+            display: block;
+            background: rgb(0, 0, 0);
+            margin: 0 15px;
+            border-radius: 50%;
+        }
+
+        .eyes .eye::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 9px;
+            transform: translate(-50%, -50%);
+            width: 12px;
+            height: 12px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 50%;
+        }
+
+        .last_redirect {
+            display: inline-block;
+            position: relative;
+            color: #0087ca;
+        }
+
+        .last_redirect:after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            transform: scaleX(0);
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: #0087ca;
+            transform-origin: bottom right;
+            transition: transform 0.25s ease-out;
+        }
+
+        .last_redirect:hover:after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+    </style>
+</head>
+
+<body style="background-color: #f3eaee92; width: 1500px; margin: auto;">
+
+
+    <!--######################  NAV-TAG #################################-->
+    <div
+        style="-webkit-font-smoothing: antialiased; z-index: 10; top: 0px; position: sticky; background-color: #f3eaee; padding-top: 20px; font-size: 18px;font-family: Biotif-Regular,Helvetica Neue,Helvetica,Arial,sans-serif; width: 100%; height: 40px;">
+        <span style="padding-left: 2%; padding-right:2%"><a href="index.html" style="font-weight: 500;">Work</a></span>
+        <span style="padding-left: 2%; padding-right:2%"><a href="about.html" style="font-weight: 500;">About</a></span>
+        <span style="padding-left: 2%; padding-right:2%"><a href="wip.html" style="font-weight: 500;">Wip</a> </span>
+        <span style="padding-left: 2%; padding-right:2%"><a href="contact.html" style="font-weight: 500;">Contact</a></span>
+        <span style=" float: right; padding-left: 2%; padding-right:10%">
+            <a href="https://twitter.com/__utpalsingh?t=E84ykeZTVMAazjUSq3AVGQ&s=09"><img
+                    src="https://cdn-icons-png.flaticon.com/512/107/107195.png" width="20" height="20"></a></span>
+        <span style="float: right; padding-left: 2%; padding-right:2%"><a
+                href="https://instagram.com/utpal_singh_rajput_?igshid=YmMyMTA2M2Y="><img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUyIesKHR0-kghKVaItyvujCQ2nS3cSBaasA&usqp=CAU"
+                    width="20" height="20"></a></span>
+        <div class="face" style="margin-left: 50%;">
+            <div class="eyes">
+                <div class="eye"></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.querySelector('body').addEventListener('mousemove', eyeball);
+
+        function eyeball() {
+            var eye = document.querySelectorAll('.eye');
+            eye.forEach(function (eye) {
+                let x = (eye.getBoundingClientRect().left) + (eye.clientWidth / 2);
+                let y = (eye.getBoundingClientRect().top) + (eye.clientHeight / 2);
+                let radian = Math.atan2(event.pageX - x, event.pageY - y);
+                let rot = (radian * (180 / Math.PI) * -1) + 270;
+                eye.style.transform = "rotate(" + rot + "deg)";
+            })
+        }
+    </script>
+
+
+<div
+        style="background-image: linear-gradient(0.25deg, rgb(255, 238, 196) -36.42%, rgb(254, 250, 246) 59.25%); padding-top:200px;padding-bottom: 200px ; height:300px; width: 100%; font-family:Apple Chancery, cursive;">
+        <center>
+            <p style="font-size:60px ;">
+                Work in Progress
+            </p>
+            <p
+                style="font-size: 20px; font-family: Biotif-Regular,Helvetica Neue,Helvetica,Arial,sans-serif; color: rgb(99, 97, 97);">
+                A behind the scenes look at my work in progress, design inspiration, questionable creations, & random life updates.</p>
+            
+        </center>
+        <!--complete-->
+    </div>
+
+
+    <div
+    style="padding-top:200px;padding-bottom: 200px ; height:300px; width: 50%; margin-left: 25%;font-family:Apple Chancery, cursive;">
+    <center>
+        
+        <hr>
+        <p>02 Feb 2022</p>
+        <hr>
+    </center>
+    <!--complete-->
+</div>
+
+
+
+
+    <div
+        style="border-radius: 30px; margin-left: 5% ; margin-right: 5%; margin-top: 5%; height: 400px; padding-top: 200px; background-image: linear-gradient(#f3eaee92,rgb(255, 255, 255), #f8f9d798); ">
+        <div style="padding-left: 2%; padding-right: 2%; width:40%; height: 20%; float: left; margin-left: 6%;">
+            <p
+                style="display: block; font-family: Biotif-Regular,Helvetica Neue,Helvetica,Arial,sans-serif; color: rgb(99, 97, 97); float: right;">
+                PREV</p>
+            <br><br><br>
+            <a href="about.html" class="last_redirect"
+                style="text-decoration: none; font-size:50px ;  font-family: Biotif-Regular,Helvetica Neue,Helvetica,Arial,sans-serif; color: rgb(0, 0, 0); float: right;">
+                About.</a>
+        </div>
+        <div style="padding-left: 2%; padding-right: 2%; width:40%; height: 20%; float: left;">
+            <p style="font-family: Biotif-Regular,Helvetica Neue,Helvetica,Arial,sans-serif; color: rgb(99, 97, 97);">
+                NEXT</p>
+            <a href="index.html" class="last_redirect"
+                style="text-decoration: none; font-size:50px ; font-family: Biotif-Regular,Helvetica Neue,Helvetica,Arial,sans-serif; color: rgb(0, 0, 0);">
+                Work. </a>
+        </div>
+        <img src="aeroplane_right.png" style="width:200px ; position: relative; left: 750px;top: -100px;">
+        <img src="aeroplane_left.png" style="width:200px ; position: relative; left: 150px;top: -50px;">
+    </div>
+
+    <div
+        style="padding-top:200px;padding-bottom: 200px ; height:300px; width: 50%; margin-left: 25%;font-family:Apple Chancery, cursive;">
+        <center>
+            <p style="font-size:60px ;">
+                I occasionally take on freelance opportunities.
+            </p>
+            <p
+                style="font-size: 20px; font-family: Biotif-Regular,Helvetica Neue,Helvetica,Arial,sans-serif; color: rgb(99, 97, 97);">
+                Have an exciting project where you need some help?</p>
+            <p
+                style="margin-top: -10px; font-size: 20px; font-family: Biotif-Regular,Helvetica Neue,Helvetica,Arial,sans-serif; color: rgb(99, 97, 97);">
+                Send me over a message, and <a href="" style="text-decoration:underline ;">let's chat.</a></p>
+        </center>
+        <!--complete-->
+    </div>
+</body>
+
+</html>

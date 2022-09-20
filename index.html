@@ -1,0 +1,749 @@
+<html>
+
+<head>
+    <title>
+        Utpal Singh
+    </title>
+    <link rel="shortcut icon" href="images.png" style="border-radius: 50%;">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .stars1 {
+            transition-duration: 0.2s;
+            transition-delay: 0s;
+        }
+
+        .stars1:hover {
+            background-color: rgb(227, 227, 227);
+            letter-spacing: 2px;
+        }
+        body{
+            cursor: context-menu;
+        }
+    </style>
+</head>
+
+<body style="background-color: #f3eaee92; width: 1500px; margin: auto;">
+
+
+    <!--######################  NAV-TAG #################################-->
+    <div
+        style="z-index: 10; top: 0px; position: sticky; background-color: #f3eaee; padding-top: 20px; font-size: 18px;font-family: Biotif-Regular,Helvetica Neue,Helvetica,Arial,sans-serif; width: 100%; height: 40px;">
+        <span style="padding-left: 2%; padding-right:2%"><a href="index.html" style="font-weight: 500;">Work</a></span>
+        <span style="padding-left: 2%; padding-right:2%"><a href="about.html" style="font-weight: 500;">About</a></span>
+        <span style="padding-left: 2%; padding-right:2%"><a href="wip.html" style="font-weight: 500;">Wip</a> </span>
+        <span style="padding-left: 2%; padding-right:2%"><a href="contact.html"
+                style="font-weight: 500;">Contact</a></span>
+        <span style=" float: right; padding-left: 2%; padding-right:10%"><a
+                href="https://twitter.com/__utpalsingh?t=E84ykeZTVMAazjUSq3AVGQ&s=09"><img
+                    src="https://cdn-icons-png.flaticon.com/512/107/107195.png" width="20" height="20"></a></span>
+        <span style="float: right; padding-left: 2%; padding-right:2%"><a
+                href="https://instagram.com/utpal_singh_rajput_?igshid=YmMyMTA2M2Y="><img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUyIesKHR0-kghKVaItyvujCQ2nS3cSBaasA&usqp=CAU"
+                    width="20" height="20"></a></span>
+        <div class="face" style="margin-left: 50%;">
+            <div class="eyes">
+                <div class="eye"></div>
+            </div>
+        </div>
+    </div>
+    <!--####################### NAV - TAG ######################-->
+
+
+    <!--######################### NAME & EYE ###########################################-->
+    <div style="margin-left: 4%; margin-right: 4%; height: 800px; margin-top: 5%; ">
+        <!--######################## NAME  ###################################-->
+        <div style="float: left; width: 50%;margin-top: 8%;">
+            <div style="width: 100%">
+                <h1 style="font-family:Apple Chancery, cursive;font-size: 90px;">Hi. I'm Utpal. A Developer.</h1>
+            </div>
+            <div style="width: 100%;">
+                <h3 style="font-family: Bahnschrift Condensed; color: rgba(12, 10, 12, 0.614);">I'm also a front-end and
+                    python GUI developer and general doodler with a keen eye for creating engaging UI, bringing products
+                    to life.</h1>
+            </div>
+        </div>
+        <!--######################## NAME COMPLETE ################################-->
+
+        <!--########################## EYE #####################################-->
+        <div style="width: 50%; height: 100%; float: left;">
+            <div
+                style="border-radius: 15px; height: 100px; width: 100px; position: relative; top: 5px;left: 5px;background-image: linear-gradient(120deg, #cf79e2, #9DD6DF ); ">
+            </div>
+            <div
+                style="border-radius: 15px; height: 100px; width: 100px; position: relative; top: -100px;left: 590px;background-image: linear-gradient(120deg, #FFDCAE , #EE81B3 ); ">
+            </div>
+            <div
+                style=" padding-top: 15%; background-color: black; width: 70%; height: 52%; position: relative; left: 15%;top: -110px; border-radius: 20px;">
+                <div id="eye"
+                    style="height: 60%; width: 70%; background-color: white; border-radius: 50%; margin: auto; padding-top: 5%; padding-left: 15%;">
+                    <img src="eye ball.png" class="rotate" height="150px" width=""
+                        style="z-index: 1; padding-left: 100px;">
+                </div>
+            </div>
+            <div
+                style="border-radius: 15px; height: 100px; width: 100px;position: relative; left: 5px; top: -100px;  background-image: linear-gradient(180deg, #F2D7D9 , #C689C6 ); ">
+            </div>
+            <div
+                style="border-radius: 15px; height: 100px; width: 100px;position: relative;left: 590px; top: -200px; background-image: linear-gradient(180deg, #1f7882 , #356e6c ,#1D5C63 ); ">
+            </div>
+
+        </div>
+        <!--################################ EYE COMPLETE ########################-->
+    </div>
+    <!--####################### NAME & EYE - COMPLETE ############################-->
+    <script>
+        document.querySelector('body').addEventListener('mousemove', eyeball);
+
+        function eyeball() {
+            var eye = document.querySelectorAll('.eye');
+            eye.forEach(function (eye) {
+                let x = (eye.getBoundingClientRect().left) + (eye.clientWidth / 2);
+                let y = (eye.getBoundingClientRect().top) + (eye.clientHeight / 2);
+                let radian = Math.atan2(event.pageX - x, event.pageY - y);
+                let rot = (radian * (180 / Math.PI) * -1) + 270;
+                eye.style.transform = "rotate(" + rot + "deg)";
+            })
+        }
+    </script>
+
+
+    <div style="width: 60%; height: 700px; margin-left: 10%; padding-left: 10%;margin-right: 10%; padding-right: 10%;">
+        <br><br><br><br>
+        <h2 style="color: #22A39F; font-family: Nanum Gothic; font-size: 55px; font-weight: 100; text-align: center;">
+            Profile
+        </h2>
+        <p
+            style="font-family: Nanum Gothic; font-weight: lighter; text-align: center; font-size: 25px; color: darkgray; margin-top: -35px;">
+            I'm a creative PHP webdeveloper
+        </p>
+        <br>
+        <hr>
+        <div style="width:33.333% ; float: left; height: 350px;">
+            <p
+                style="padding-left: 20px; color: #22A39F; font-family: Nanum Gothic; font-size: 30px; font-weight: 100;">
+                About me
+            </p>
+            <p
+                style="padding: 20px; font-family:Arial, Helvetica, sans-serif; font-weight: 100; font-size: 18px; color: rgb(91, 91, 91); margin-top: -20px;">
+                I am an allround web developer. I am a senior programmer with good knowledge of front-end techniques. I
+                love structure and order and I also stand for quality. I love spending time on fixing little details and
+                optimizing web apps. Also I like working in a team, you'll learn faster and much more. As the saying
+                goes: 'two heads are better than one'.
+            </p>
+        </div>
+
+
+        <div style="width:33.333% ; float: left; height: 350px;">
+            <img src="utpal22.jpg" alt="" style="width:80% ; border-radius: 50%; margin-left: 10%; margin-top: 20%;">
+        </div>
+
+
+        <div style="width:33.333% ; float: left; height: 350px;">
+            <p style=" color: #22A39F; font-family: Nanum Gothic; font-size: 30px; font-weight: 100;">
+                Details
+            </p>
+            <p
+                style=" padding-top: 20px; font-family:Arial, Helvetica, sans-serif; font-weight: 600; font-size: 18px; color: rgb(45, 45, 45); margin-top: -20px;">
+                Name:
+            </p>
+            <p
+                style="padding-top: 10px; font-family:Arial, Helvetica, sans-serif; font-weight: 100; font-size: 18px; color: rgb(91, 91, 91); margin-top: -20px;">
+                Utpal Kumar Singh
+            </p>
+
+            <p
+                style=" padding-top: 20px; font-family:Arial, Helvetica, sans-serif; font-weight: 600; font-size: 18px; color: rgb(45, 45, 45); margin-top: -20px;">
+                Age:
+            </p>
+            <p
+                style="padding-top: 10px;  font-family:Arial, Helvetica, sans-serif; font-weight: 100; font-size: 18px; color: rgb(91, 91, 91); margin-top: -20px;">
+                21 Years
+            </p>
+            <p
+                style=" padding-top: 20px; font-family:Arial, Helvetica, sans-serif; font-weight: 600; font-size: 18px; color: rgb(45, 45, 45); margin-top: -20px;">
+                Location:
+            </p>
+            <p
+                style="padding-top: 10px;  font-family:Arial, Helvetica, sans-serif; font-weight: 100; font-size: 18px; color: rgb(91, 91, 91); margin-top: -20px;">
+                Chandigarh, The India, Earth
+            </p>
+            <a href="https://twitter.com/__utpalsingh?t=E84ykeZTVMAazjUSq3AVGQ&s=09" style="text-decoration: none;">
+                <div
+                    style="width: 80px; background-color: #1d9bf0; height: 20px; padding: 5px; border-radius: 20px; color: white;">
+                    <img src="twitter_PNG15.png" alt="" style="width: 18px; position: relative; top: 3px;"> Follow
+                </div>
+            </a>
+        </div>
+        <br>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <div style="width: 60%; height: 700px; margin-left: 10%; padding-left: 10%;margin-right: 10%; padding-right: 10%;">
+        <br><br><br><br>
+        <h2 style="color: #22A39F; font-family: Nanum Gothic; font-size: 55px; font-weight: 100; text-align: center;">
+            Experiences
+        </h2>
+        <p
+            style="font-family: Nanum Gothic; font-weight: lighter; text-align: center; font-size: 25px; color: darkgray; margin-top: -35px;">
+            “Protons give an atom its identity, electrons its personality.”<br>
+            - Bill Bryson, A short history of nearly everything
+        </p>
+        <br>
+        <hr>
+
+        <div style="width: 30%;  height: 150px; float: left; "><p style="padding-left: 20px; color: #22A39F; font-family: Nanum Gothic; font-size: 30px; font-weight: 100;">2020 - 2021</p></div>
+        <div style="width: 70%;  height: 150px; float: left; "><p style="padding-left: 20px; color: rgb(72, 72, 72); font-family: Nanum Gothic; font-size: 20px; font-weight: 100;">In a Team <br>
+            working on a website, Chandigarh
+            We were working on a Bus Transport system
+            The idea was mine and I manage the team and
+            handle the backend</p></div>
+<br>
+        <div style="width: 30%;  height: 150px; float: left; "><p style="padding-left: 20px; color: #22A39F; font-family: Nanum Gothic; font-size: 30px; font-weight: 100;">2021 - 2022</p></div>
+        <div style="width: 70%;  height: 150px; float: left; "><p style="padding-left: 20px; color: rgb(72, 72, 72); font-family: Nanum Gothic; font-size: 20px; font-weight: 100;">In a Team <br>
+            Music Player, Chandigarh
+            We created a music player. Which was an
+            application.
+            And a Webpage.</p></div>
+    </div>
+
+
+    <div style="width: 60%; height: 1600px; margin-left: 10%; padding-left: 10%;margin-right: 10%; padding-right: 10%;">
+        <br><br><br><br>
+        <h2 style="color: #22A39F; font-family: Nanum Gothic; font-size: 55px; font-weight: 100; text-align: center;">
+            Abilities
+        </h2>
+        <p
+            style="font-family: Nanum Gothic; font-weight: lighter; text-align: center; font-size: 25px; color: darkgray; margin-top: -35px;">
+            “Life without knowledge is death in disguise.”<br>
+            - Talib Kweli
+        </p>
+        <br>
+        <hr>
+        <p style=" color: #22A39F; font-family: Nanum Gothic; font-size: 30px; font-weight: 100;">Skills</p>
+
+
+        <div style=" width: 46%; padding: 2%; float: left; height: 30%;">
+            <!--1st-->
+            <div class="stars1"
+                style=" height: auto; width: 90%;  margin-left: 5%; margin-top: 0; margin-bottom: 0; padding: 5px;">
+                <p
+                    style="color: rgb(87, 87, 87); display: inline-block; font-size: 20px; width: 70%; margin-top: 0; margin-bottom: 0;">
+                    HTML</p>
+                <p class="stars" style=" display: inline-block; color: #22A39F;margin-top: 0; margin-bottom: 0;">
+                    &#9733;&#9733;&#9733;&#9733;&#9733; </p>
+            </div>
+
+            <div class="stars1"
+                style=" height: auto; width: 90%;  margin-left: 5%; margin-top: 0; margin-bottom: 0; padding: 5px;">
+                <p
+                    style="color: rgb(87, 87, 87); display: inline-block; font-size: 20px; width: 70%; margin-top: 0; margin-bottom: 0;">
+                    CSS</p>
+                <p class="stars" style=" display: inline-block; color: #22A39F;margin-top: 0; margin-bottom: 0;">
+                    &#9733;&#9733;&#9733;&#9733;&#9733; </p>
+            </div>
+
+            <div class="stars1"
+                style=" height: auto; width: 90%;  margin-left: 5%; margin-top: 0; margin-bottom: 0; padding: 5px;">
+                <p
+                    style="color: rgb(87, 87, 87); display: inline-block; font-size: 20px; width: 70%; margin-top: 0; margin-bottom: 0;">
+                    JSON</p>
+                <p class="stars" style=" display: inline-block; color: #22A39F;margin-top: 0; margin-bottom: 0;">
+                    &#9733;&#9733;&#9733;&#9733;&#9733; </p>
+            </div>
+
+            <div class="stars1"
+                style=" height: auto; width: 90%;  margin-left: 5%; margin-top: 0; margin-bottom: 0; padding: 5px;">
+                <p
+                    style="color: rgb(87, 87, 87); display: inline-block; font-size: 20px; width: 70%; margin-top: 0; margin-bottom: 0;">
+                    Javascript</p>
+                <p class="stars" style=" display: inline-block; color: #22A39F;margin-top: 0; margin-bottom: 0;">
+                    &#9733;&#9733;&#9733;&#9733;&#9733; </p>
+            </div>
+
+            <div class="stars1"
+                style=" height: auto; width: 90%;  margin-left: 5%; margin-top: 0; margin-bottom: 0; padding: 5px;">
+                <p
+                    style="color: rgb(87, 87, 87); display: inline-block; font-size: 20px; width: 70%; margin-top: 0; margin-bottom: 0;">
+                    MySQL</p>
+                <p class="stars" style=" display: inline-block; color: #22A39F;margin-top: 0; margin-bottom: 0;">
+                    &#9733;&#9733;&#9733;&#9733;&#9733; </p>
+            </div>
+
+            <div class="stars1"
+                style=" height: auto; width: 90%;  margin-left: 5%; margin-top: 0; margin-bottom: 0; padding: 5px;">
+                <p
+                    style="color: rgb(87, 87, 87); display: inline-block; font-size: 20px; width: 70%; margin-top: 0; margin-bottom: 0;">
+                    PHP</p>
+                <p class="stars" style=" display: inline-block; color: #22A39F;margin-top: 0; margin-bottom: 0;">
+                    &#9733;&#9733;&#9733;&#9733;&#9733; </p>
+            </div>
+
+            <div class="stars1"
+                style=" height: auto; width: 90%;  margin-left: 5%; margin-top: 0; margin-bottom: 0; padding: 5px;">
+                <p
+                    style="color: rgb(87, 87, 87); display: inline-block; font-size: 20px; width: 70%; margin-top: 0; margin-bottom: 0;">
+                    XML</p>
+                <p class="stars" style=" display: inline-block; color: #22A39F;margin-top: 0; margin-bottom: 0;">
+                    &#9733;&#9733;&#9733;&#9733;&#9733; </p>
+            </div>
+
+            <div class="stars1"
+                style=" height: auto; width: 90%;  margin-left: 5%; margin-top: 0; margin-bottom: 0; padding: 5px;">
+                <p
+                    style="color: rgb(87, 87, 87); display: inline-block; font-size: 20px; width: 70%; margin-top: 0; margin-bottom: 0;">
+                    Command line Inteface</p>
+                <p class="stars" style=" display: inline-block; color: #22A39F;margin-top: 0; margin-bottom: 0;">
+                    &#9733;&#9733;&#9733;&#9733;&#9733; </p>
+            </div>
+
+            <div class="stars1"
+                style=" height: auto; width: 90%;  margin-left: 5%; margin-top: 0; margin-bottom: 0; padding: 5px;">
+                <p
+                    style="color: rgb(87, 87, 87); display: inline-block; font-size: 20px; width: 70%; margin-top: 0; margin-bottom: 0;">
+                    JQuery</p>
+                <p class="stars" style=" display: inline-block; color: #22A39F;margin-top: 0; margin-bottom: 0;">
+                    &#9733;&#9733;&#9733;&#9733;&#9733; </p>
+            </div>
+
+
+            <div class="stars1"
+                style=" height: auto; width: 90%;  margin-left: 5%; margin-top: 0; margin-bottom: 0; padding: 5px;">
+                <p
+                    style="color: rgb(87, 87, 87); display: inline-block; font-size: 20px; width: 70%; margin-top: 0; margin-bottom: 0;">
+                    Java</p>
+                <p class="stars" style=" display: inline-block; color: #22A39F;margin-top: 0; margin-bottom: 0;">
+                    &#9733;&#9733;&#9733;&#9733;&#9733; </p>
+            </div>
+
+
+            <div class="stars1"
+                style=" height: auto; width: 90%;  margin-left: 5%; margin-top: 0; margin-bottom: 0; padding: 5px;">
+                <p
+                    style="color: rgb(87, 87, 87); display: inline-block; font-size: 20px; width: 70%; margin-top: 0; margin-bottom: 0;">
+                    Pandas</p>
+                <p class="stars" style=" display: inline-block; color: #22A39F;margin-top: 0; margin-bottom: 0;">
+                    &#9733;&#9733;&#9733;&#9733;&#9733; </p>
+            </div>
+
+
+            <div class="stars1"
+                style=" height: auto; width: 90%;  margin-left: 5%; margin-top: 0; margin-bottom: 0; padding: 5px;">
+                <p
+                    style="color: rgb(87, 87, 87); display: inline-block; font-size: 20px; width: 70%; margin-top: 0; margin-bottom: 0;">
+                    MS Excel</p>
+                <p class="stars" style=" display: inline-block; color: #22A39F;margin-top: 0; margin-bottom: 0;">
+                    &#9733;&#9733;&#9733;&#9733;&#9733; </p>
+            </div>
+
+
+            <div class="stars1"
+                style=" height: auto; width: 90%;  margin-left: 5%; margin-top: 0; margin-bottom: 0; padding: 5px;">
+                <p
+                    style="color: rgb(87, 87, 87); display: inline-block; font-size: 20px; width: 70%; margin-top: 0; margin-bottom: 0;">
+                    C</p>
+                <p class="stars" style=" display: inline-block; color: #22A39F;margin-top: 0; margin-bottom: 0;">
+                    &#9733;&#9733;&#9733;&#9733;&#9733; </p>
+            </div>
+
+            <div class="stars1"
+                style=" height: auto; width: 90%;  margin-left: 5%; margin-top: 0; margin-bottom: 0; padding: 5px;">
+                <p
+                    style="color: rgb(87, 87, 87); display: inline-block; font-size: 20px; width: 70%; margin-top: 0; margin-bottom: 0;">
+                    C++</p>
+                <p class="stars" style=" display: inline-block; color: #22A39F;margin-top: 0; margin-bottom: 0;">
+                    &#9733;&#9733;&#9733;&#9733;&#9733; </p>
+            </div>
+        </div>
+
+
+        <div style="width: 46%; padding: 2%; float: left; height: 30%;">
+            <!--2nd-->
+
+            <div class="stars1"
+                style=" height: auto; width: 90%;  margin-left: 5%; margin-top: 0; margin-bottom: 0; padding: 5px;">
+                <p
+                    style="color: rgb(87, 87, 87); display: inline-block; font-size: 20px; width: 70%; margin-top: 0; margin-bottom: 0;">
+                    Python</p>
+                <p class="stars" style=" display: inline-block; color: #22A39F;margin-top: 0; margin-bottom: 0;">
+                    &#9733;&#9733;&#9733;&#9733;&#9733; </p>
+            </div>
+
+            <div class="stars1"
+                style=" height: auto; width: 90%;  margin-left: 5%; margin-top: 0; margin-bottom: 0; padding: 5px;">
+                <p
+                    style="color: rgb(87, 87, 87); display: inline-block; font-size: 20px; width: 70%; margin-top: 0; margin-bottom: 0;">
+                    R </p>
+                <p class="stars" style=" display: inline-block; color: #22A39F;margin-top: 0; margin-bottom: 0;">
+                    &#9733;&#9733;&#9733;&#9733;&#9733; </p>
+            </div>
+
+            <div class="stars1"
+                style=" height: auto; width: 90%;  margin-left: 5%; margin-top: 0; margin-bottom: 0; padding: 5px;">
+                <p
+                    style="color: rgb(87, 87, 87); display: inline-block; font-size: 20px; width: 70%; margin-top: 0; margin-bottom: 0;">
+                    React</p>
+                <p class="stars" style=" display: inline-block; color: #22A39F;margin-top: 0; margin-bottom: 0;">
+                    &#9733;&#9733;&#9733;&#9733;&#9733; </p>
+            </div>
+
+            <div class="stars1"
+                style=" height: auto; width: 90%;  margin-left: 5%; margin-top: 0; margin-bottom: 0; padding: 5px;">
+                <p
+                    style="color: rgb(87, 87, 87); display: inline-block; font-size: 20px; width: 70%; margin-top: 0; margin-bottom: 0;">
+                    Bootstrap</p>
+                <p class="stars" style=" display: inline-block; color: #22A39F;margin-top: 0; margin-bottom: 0;">
+                    &#9733;&#9733;&#9733;&#9733;&#9733; </p>
+            </div>
+
+            <div class="stars1"
+                style=" height: auto; width: 90%;  margin-left: 5%; margin-top: 0; margin-bottom: 0; padding: 5px;">
+                <p
+                    style="color: rgb(87, 87, 87); display: inline-block; font-size: 20px; width: 70%; margin-top: 0; margin-bottom: 0;">
+                    Blockchain</p>
+                <p class="stars" style=" display: inline-block; color: #22A39F;margin-top: 0; margin-bottom: 0;">
+                    &#9733;&#9733;&#9733;&#9733;&#9733; </p>
+            </div>
+
+            <div class="stars1"
+                style=" height: auto; width: 90%;  margin-left: 5%; margin-top: 0; margin-bottom: 0; padding: 5px;">
+                <p
+                    style="color: rgb(87, 87, 87); display: inline-block; font-size: 20px; width: 70%; margin-top: 0; margin-bottom: 0;">
+                    GUI</p>
+                <p class="stars" style=" display: inline-block; color: #22A39F;margin-top: 0; margin-bottom: 0;">
+                    &#9733;&#9733;&#9733;&#9733;&#9733; </p>
+            </div>
+
+            <div class="stars1"
+                style=" height: auto; width: 90%;  margin-left: 5%; margin-top: 0; margin-bottom: 0; padding: 5px;">
+                <p
+                    style="color: rgb(87, 87, 87); display: inline-block; font-size: 20px; width: 70%; margin-top: 0; margin-bottom: 0;">
+                    Android Development</p>
+                <p class="stars" style=" display: inline-block; color: #22A39F;margin-top: 0; margin-bottom: 0;">
+                    &#9733;&#9733;&#9733;&#9733;&#9733; </p>
+            </div>
+
+            <div class="stars1"
+                style=" height: auto; width: 90%;  margin-left: 5%; margin-top: 0; margin-bottom: 0; padding: 5px;">
+                <p
+                    style="color: rgb(87, 87, 87); display: inline-block; font-size: 20px; width: 70%; margin-top: 0; margin-bottom: 0;">
+                    Data Analysis</p>
+                <p class="stars" style=" display: inline-block; color: #22A39F;margin-top: 0; margin-bottom: 0;">
+                    &#9733;&#9733;&#9733;&#9733;&#9733; </p>
+            </div>
+
+            <div class="stars1"
+                style=" height: auto; width: 90%;  margin-left: 5%; margin-top: 0; margin-bottom: 0; padding: 5px;">
+                <p
+                    style="color: rgb(87, 87, 87); display: inline-block; font-size: 20px; width: 70%; margin-top: 0; margin-bottom: 0;">
+                    Web Automation</p>
+                <p class="stars" style=" display: inline-block; color: #22A39F;margin-top: 0; margin-bottom: 0;">
+                    &#9733;&#9733;&#9733;&#9733;&#9733; </p>
+            </div>
+
+            <div class="stars1"
+                style=" height: auto; width: 90%;  margin-left: 5%; margin-top: 0; margin-bottom: 0; padding: 5px;">
+                <p
+                    style="color: rgb(87, 87, 87); display: inline-block; font-size: 20px; width: 70%; margin-top: 0; margin-bottom: 0;">
+                    SMTP</p>
+                <p class="stars" style=" display: inline-block; color: #22A39F;margin-top: 0; margin-bottom: 0;">
+                    &#9733;&#9733;&#9733;&#9733;&#9733; </p>
+            </div>
+
+            <div class="stars1"
+                style=" height: auto; width: 90%;  margin-left: 5%; margin-top: 0; margin-bottom: 0; padding: 5px;">
+                <p
+                    style="color: rgb(87, 87, 87); display: inline-block; font-size: 20px; width: 70%; margin-top: 0; margin-bottom: 0;">
+                    Data Structures</p>
+                <p class="stars" style=" display: inline-block; color: #22A39F;margin-top: 0; margin-bottom: 0;">
+                    &#9733;&#9733;&#9733;&#9733;&#9733; </p>
+            </div>
+
+            <div class="stars1"
+                style=" height: auto; width: 90%;  margin-left: 5%; margin-top: 0; margin-bottom: 0; padding: 5px;">
+                <p
+                    style="color: rgb(87, 87, 87); display: inline-block; font-size: 20px; width: 70%; margin-top: 0; margin-bottom: 0;">
+                    Dynamic programming</p>
+                <p class="stars" style=" display: inline-block; color: #22A39F;margin-top: 0; margin-bottom: 0;">
+                    &#9733;&#9733;&#9733;&#9733;&#9733; </p>
+            </div>
+
+            <div class="stars1"
+                style=" height: auto; width: 90%;  margin-left: 5%; margin-top: 0; margin-bottom: 0; padding: 5px;">
+                <p
+                    style="color: rgb(87, 87, 87); display: inline-block; font-size: 20px; width: 70%; margin-top: 0; margin-bottom: 0;">
+                    Wordpress</p>
+                <p class="stars" style=" display: inline-block; color: #22A39F;margin-top: 0; margin-bottom: 0;">
+                    &#9733;&#9733;&#9733;&#9733;&#9733; </p>
+            </div>
+        </div>
+
+
+        <br><br>
+        <hr>
+        <!--language-->
+
+        <p style=" color: #22A39F; font-family: Nanum Gothic; font-size: 30px; font-weight: 100;">Languages</p>
+
+        <div style=" width: 46%; padding: 2%; float: left; height: 5%;">
+            <div class="stars1"
+                style=" height: auto; width: 90%;  margin-left: 5%; margin-top: 0; margin-bottom: 0; padding: 5px;">
+                <p
+                    style="color: rgb(87, 87, 87); display: inline-block; font-size: 20px; width: 70%; margin-top: 0; margin-bottom: 0;">
+                    Hindi (Mother Tongue)</p>
+                <p class="stars" style=" display: inline-block; color: #22A39F;margin-top: 0; margin-bottom: 0;">
+                    &#9733;&#9733;&#9733;&#9733;&#9733; </p>
+            </div>
+
+            <div class="stars1"
+                style=" height: auto; width: 90%;  margin-left: 5%; margin-top: 0; margin-bottom: 0; padding: 5px;">
+                <p
+                    style="color: rgb(87, 87, 87); display: inline-block; font-size: 20px; width: 70%; margin-top: 0; margin-bottom: 0;">
+                    English</p>
+                <p class="stars" style=" display: inline-block; color: #22A39F;margin-top: 0; margin-bottom: 0;">
+                    &#9733;&#9733;&#9733;&#9733;&#9733; </p>
+            </div>
+
+            <div class="stars1"
+                style=" height: auto; width: 90%;  margin-left: 5%; margin-top: 0; margin-bottom: 0; padding: 5px;">
+                <p
+                    style="color: rgb(87, 87, 87); display: inline-block; font-size: 20px; width: 70%; margin-top: 0; margin-bottom: 0;">
+                    Bhojpuri</p>
+                <p class="stars" style=" display: inline-block; color: #22A39F;margin-top: 0; margin-bottom: 0;">
+                    &#9733;&#9733;&#9733;&#9733;&#9733; </p>
+            </div>
+        </div>
+
+
+        <div style="width: 46%; padding: 2%; float: left; height: 5%;">
+            <div class="stars1"
+            style=" height: auto; width: 90%;  margin-left: 5%; margin-top: 0; margin-bottom: 0; padding: 5px;">
+            <p
+                style="color: rgb(87, 87, 87); display: inline-block; font-size: 20px; width: 70%; margin-top: 0; margin-bottom: 0;">
+                Maithili</p>
+            <p class="stars" style=" display: inline-block; color: #22A39F;margin-top: 0; margin-bottom: 0;">
+                &#9734;&#9733;&#9733;&#9733;&#9733; </p>
+        </div>
+
+        <div class="stars1"
+                style=" height: auto; width: 90%;  margin-left: 5%; margin-top: 0; margin-bottom: 0; padding: 5px;">
+                <p
+                    style="color: rgb(87, 87, 87); display: inline-block; font-size: 20px; width: 70%; margin-top: 0; margin-bottom: 0;">
+                    Punjabi (ਥੋੜ੍ਹਾ)</p>
+                <p class="stars" style=" display: inline-block; color: #22A39F;margin-top: 0; margin-bottom: 0;">
+                    &#9734;&#9734;&#9733;&#9733;&#9733; </p>
+            </div>
+        </div>
+
+
+
+
+
+        <br><br>
+        <hr>
+        <!--tools-->
+
+        <p style=" color: #22A39F; font-family: Nanum Gothic; font-size: 30px; font-weight: 100;">Tools</p>
+        <div style=" width: 46%; padding: 2%; float: left; height: 20%;">
+<!--1st-->
+<div class="stars1"
+                style=" height: auto; width: 90%;  margin-left: 5%; margin-top: 0; margin-bottom: 0; padding: 5px;">
+                <p
+                    style="color: rgb(87, 87, 87); display: inline-block; font-size: 20px; width: 70%; margin-top: 0; margin-bottom: 0;">
+                    MS Office</p>
+                <p class="stars" style=" display: inline-block; color: #22A39F;margin-top: 0; margin-bottom: 0;">
+                    &#9733;&#9733;&#9733;&#9733;&#9733; </p>
+            </div>
+
+            <div class="stars1"
+                style=" height: auto; width: 90%;  margin-left: 5%; margin-top: 0; margin-bottom: 0; padding: 5px;">
+                <p
+                    style="color: rgb(87, 87, 87); display: inline-block; font-size: 20px; width: 70%; margin-top: 0; margin-bottom: 0;">
+                    Notepad++</p>
+                <p class="stars" style=" display: inline-block; color: #22A39F;margin-top: 0; margin-bottom: 0;">
+                    &#9733;&#9733;&#9733;&#9733;&#9733; </p>
+            </div>
+
+            <div class="stars1"
+                style=" height: auto; width: 90%;  margin-left: 5%; margin-top: 0; margin-bottom: 0; padding: 5px;">
+                <p
+                    style="color: rgb(87, 87, 87); display: inline-block; font-size: 20px; width: 70%; margin-top: 0; margin-bottom: 0;">
+                    Windows</p>
+                <p class="stars" style=" display: inline-block; color: #22A39F;margin-top: 0; margin-bottom: 0;">
+                    &#9733;&#9733;&#9733;&#9733;&#9733; </p>
+            </div>
+
+            <div class="stars1"
+                style=" height: auto; width: 90%;  margin-left: 5%; margin-top: 0; margin-bottom: 0; padding: 5px;">
+                <p
+                    style="color: rgb(87, 87, 87); display: inline-block; font-size: 20px; width: 70%; margin-top: 0; margin-bottom: 0;">
+                    Adobe</p>
+                <p class="stars" style=" display: inline-block; color: #22A39F;margin-top: 0; margin-bottom: 0;">
+                    &#9734;&#9733;&#9733;&#9733;&#9733; </p>
+            </div>
+
+            <div class="stars1"
+                style=" height: auto; width: 90%;  margin-left: 5%; margin-top: 0; margin-bottom: 0; padding: 5px;">
+                <p
+                    style="color: rgb(87, 87, 87); display: inline-block; font-size: 20px; width: 70%; margin-top: 0; margin-bottom: 0;">
+                    Git / Git Flow</p>
+                <p class="stars" style=" display: inline-block; color: #22A39F;margin-top: 0; margin-bottom: 0;">
+                    &#9734;&#9734;&#9733;&#9733;&#9733; </p>
+            </div>
+
+            <div class="stars1"
+                style=" height: auto; width: 90%;  margin-left: 5%; margin-top: 0; margin-bottom: 0; padding: 5px;">
+                <p
+                    style="color: rgb(87, 87, 87); display: inline-block; font-size: 20px; width: 70%; margin-top: 0; margin-bottom: 0;">
+                    Adobe Photoshop</p>
+                <p class="stars" style=" display: inline-block; color: #22A39F;margin-top: 0; margin-bottom: 0;">
+                    &#9734;&#9734;&#9733;&#9733;&#9733; </p>
+            </div>
+
+            <div class="stars1"
+                style=" height: auto; width: 90%;  margin-left: 5%; margin-top: 0; margin-bottom: 0; padding: 5px;">
+                <p
+                    style="color: rgb(87, 87, 87); display: inline-block; font-size: 20px; width: 70%; margin-top: 0; margin-bottom: 0;">
+                    Brave</p>
+                <p class="stars" style=" display: inline-block; color: #22A39F;margin-top: 0; margin-bottom: 0;">
+                    &#9734;&#9733;&#9733;&#9733;&#9733; </p>
+            </div>
+
+            <div class="stars1"
+                style=" height: auto; width: 90%;  margin-left: 5%; margin-top: 0; margin-bottom: 0; padding: 5px;">
+                <p
+                    style="color: rgb(87, 87, 87); display: inline-block; font-size: 20px; width: 70%; margin-top: 0; margin-bottom: 0;">
+                    Atom</p>
+                <p class="stars" style=" display: inline-block; color: #22A39F;margin-top: 0; margin-bottom: 0;">
+                    &#9734;&#9733;&#9733;&#9733;&#9733; </p>
+            </div>
+
+            <div class="stars1"
+                style=" height: auto; width: 90%;  margin-left: 5%; margin-top: 0; margin-bottom: 0; padding: 5px;">
+                <p
+                    style="color: rgb(87, 87, 87); display: inline-block; font-size: 20px; width: 70%; margin-top: 0; margin-bottom: 0;">
+                    PyCharm</p>
+                <p class="stars" style=" display: inline-block; color: #22A39F;margin-top: 0; margin-bottom: 0;">
+                    &#9734;&#9733;&#9733;&#9733;&#9733; </p>
+            </div>
+
+            <div class="stars1"
+                style=" height: auto; width: 90%;  margin-left: 5%; margin-top: 0; margin-bottom: 0; padding: 5px;">
+                <p
+                    style="color: rgb(87, 87, 87); display: inline-block; font-size: 20px; width: 70%; margin-top: 0; margin-bottom: 0;">
+                    Eclipse IDE </p>
+                <p class="stars" style=" display: inline-block; color: #22A39F;margin-top: 0; margin-bottom: 0;">
+                    &#9734;&#9733;&#9733;&#9733;&#9733; </p>
+            </div>
+        </div>
+
+
+        <div style="width: 46%; padding: 2%; float: left; height: 20%;">
+<!--2nd-->
+
+<div class="stars1"
+                style=" height: auto; width: 90%;  margin-left: 5%; margin-top: 0; margin-bottom: 0; padding: 5px;">
+                <p
+                    style="color: rgb(87, 87, 87); display: inline-block; font-size: 20px; width: 70%; margin-top: 0; margin-bottom: 0;">
+                    Spyder </p>
+                <p class="stars" style=" display: inline-block; color: #22A39F;margin-top: 0; margin-bottom: 0;">
+                    &#9734;&#9734;&#9733;&#9733;&#9733; </p>
+            </div>
+
+            <div class="stars1"
+                style=" height: auto; width: 90%;  margin-left: 5%; margin-top: 0; margin-bottom: 0; padding: 5px;">
+                <p
+                    style="color: rgb(87, 87, 87); display: inline-block; font-size: 20px; width: 70%; margin-top: 0; margin-bottom: 0;">
+                    Android Studio</p>
+                <p class="stars" style=" display: inline-block; color: #22A39F;margin-top: 0; margin-bottom: 0;">
+                    &#9734;&#9734;&#9734;&#9733;&#9733; </p>
+            </div>
+
+            <div class="stars1"
+                style=" height: auto; width: 90%;  margin-left: 5%; margin-top: 0; margin-bottom: 0; padding: 5px;">
+                <p
+                    style="color: rgb(87, 87, 87); display: inline-block; font-size: 20px; width: 70%; margin-top: 0; margin-bottom: 0;">
+                    Wondershare Filmora X</p>
+                <p class="stars" style=" display: inline-block; color: #22A39F;margin-top: 0; margin-bottom: 0;">
+                    &#9734;&#9733;&#9733;&#9733;&#9733; </p>
+            </div>
+
+            <div class="stars1"
+                style=" height: auto; width: 90%;  margin-left: 5%; margin-top: 0; margin-bottom: 0; padding: 5px;">
+                <p
+                    style="color: rgb(87, 87, 87); display: inline-block; font-size: 20px; width: 70%; margin-top: 0; margin-bottom: 0;">
+                    Tor</p>
+                <p class="stars" style=" display: inline-block; color: #22A39F;margin-top: 0; margin-bottom: 0;">
+                    &#9734;&#9734;&#9734;&#9733;&#9733; </p>
+            </div>
+
+            <div class="stars1"
+                style=" height: auto; width: 90%;  margin-left: 5%; margin-top: 0; margin-bottom: 0; padding: 5px;">
+                <p
+                    style="color: rgb(87, 87, 87); display: inline-block; font-size: 20px; width: 70%; margin-top: 0; margin-bottom: 0;">
+                    IntelliJ IDE</p>
+                <p class="stars" style=" display: inline-block; color: #22A39F;margin-top: 0; margin-bottom: 0;">
+                    &#9734;&#9733;&#9733;&#9733;&#9733; </p>
+            </div>
+
+            <div class="stars1"
+                style=" height: auto; width: 90%;  margin-left: 5%; margin-top: 0; margin-bottom: 0; padding: 5px;">
+                <p
+                    style="color: rgb(87, 87, 87); display: inline-block; font-size: 20px; width: 70%; margin-top: 0; margin-bottom: 0;">
+                    Canva</p>
+                <p class="stars" style=" display: inline-block; color: #22A39F;margin-top: 0; margin-bottom: 0;">
+                    &#9734;&#9733;&#9733;&#9733;&#9733; </p>
+            </div>
+
+            <div class="stars1"
+                style=" height: auto; width: 90%;  margin-left: 5%; margin-top: 0; margin-bottom: 0; padding: 5px;">
+                <p
+                    style="color: rgb(87, 87, 87); display: inline-block; font-size: 20px; width: 70%; margin-top: 0; margin-bottom: 0;">
+                    XAMPP</p>
+                <p class="stars" style=" display: inline-block; color: #22A39F;margin-top: 0; margin-bottom: 0;">
+                    &#9734;&#9733;&#9733;&#9733;&#9733; </p>
+            </div>
+
+            <div class="stars1"
+                style=" height: auto; width: 90%;  margin-left: 5%; margin-top: 0; margin-bottom: 0; padding: 5px;">
+                <p
+                    style="color: rgb(87, 87, 87); display: inline-block; font-size: 20px; width: 70%; margin-top: 0; margin-bottom: 0;">
+                    ------------------</p>
+                <p class="stars" style=" display: inline-block; color: #22A39F;margin-top: 0; margin-bottom: 0;">
+                    &#9733;&#9733;&#9733;&#9733;&#9733; </p>
+            </div>
+
+            <div class="stars1"
+                style=" height: auto; width: 90%;  margin-left: 5%; margin-top: 0; margin-bottom: 0; padding: 5px;">
+                <p
+                    style="color: rgb(87, 87, 87); display: inline-block; font-size: 20px; width: 70%; margin-top: 0; margin-bottom: 0;">
+                    ------------------</p>
+                <p class="stars" style=" display: inline-block; color: #22A39F;margin-top: 0; margin-bottom: 0;">
+                    &#9733;&#9733;&#9733;&#9733;&#9733; </p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div style="padding-top:200px;padding-bottom: 200px ; height:300px; width: 50%; margin-left: 25%;font-family:Apple Chancery, cursive;">
+        <center><p style="font-size:60px ;">
+            I occasionally take on freelance opportunities.
+        </p>
+    <p style="font-size: 20px; font-family: Biotif-Regular,Helvetica Neue,Helvetica,Arial,sans-serif; color: rgb(99, 97, 97);">Have an exciting project where you need some help?</p>
+    <p style="margin-top: -10px; font-size: 20px; font-family: Biotif-Regular,Helvetica Neue,Helvetica,Arial,sans-serif; color: rgb(99, 97, 97);">Send me over a message, and <a href="contact.html" style="text-decoration:underline ;">let's chat.</a></p>
+    </center>
+<!--complete-->
+</div>
+
+
+</body>
+
+</html>
